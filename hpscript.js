@@ -72,7 +72,7 @@ function _load() {
       document.getElementById("houseName").style.color = colors[win];
       document.getElementById("housePic").src = `./img/${houses[win]}.jpg`;
       root.style.backgroundImage = `radial-gradient(black 80%, ${colors[win]} 20%)`;
-    }, 3500);
+    }, 3650);
   }
 
   function newqa() {
