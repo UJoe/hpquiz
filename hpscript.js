@@ -52,7 +52,7 @@ function _load() {
     </div> 
     `;
     sound.src = "./audio/hmm-1.mp3";
-    sound.volume = 0.3;
+    sound.volume = 0.5;
     sound.play();
     let win = 0;
     let great = 0;
@@ -65,14 +65,14 @@ function _load() {
     console.log(win);
     setTimeout(() => {
       sound.src = "./audio/hmm-2.mp3";
-      sound.volume = 0.5;
+      sound.volume = 0.9;
       sound.play();
       document.getElementById("hat").src = "./img/sorted.jpg";
       document.getElementById("houseName").innerHTML = houses[win];
       document.getElementById("houseName").style.color = colors[win];
       document.getElementById("housePic").src = `./img/${houses[win]}.jpg`;
       root.style.backgroundImage = `radial-gradient(black 80%, ${colors[win]} 20%)`;
-    }, 3000);
+    }, 3500);
   }
 
   function newqa() {
