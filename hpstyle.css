@@ -1,0 +1,166 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: hpfont;
+  src: url(./font/HarryP-MVZ6w.ttf);
+}
+
+#root {
+  background-image: url("./img/hp-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 40%; 
+  width: 100vw;
+  height: 100vh;
+  font-family: hpfont;
+}
+
+h1 {
+  position: fixed;
+  top: 30%;
+  right: 4%;
+  font-size: 4em;
+  color: lightskyblue;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px red;
+}
+
+#startDiv {
+  position: fixed;
+  top: 50%;
+  right: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+
+.startBtn {
+  transform: scale(2.1);
+  font-family: hpfont;
+  letter-spacing: 1px;
+  background-color: black;
+  outline: none;
+  padding: 5px;
+  border-radius: 8px;
+  border: solid 1px lightskyblue;
+  max-width: 400px;
+  transition: all 0.5s;
+}
+
+#yesBtn {
+  color: lime;
+  animation: glowlime 2s infinite;
+}
+
+#noBtn {
+  color: white;
+  animation: glowwhite 2s infinite;
+}
+
+@keyframes glowlime {
+  0% {box-shadow: 0 0 10px rgba(50, 251, 14, 0);}
+  50% {box-shadow: 0 0 20px lime;}
+  100% {box-shadow: 0 0 10px rgba(50, 251, 14, 0);}
+}
+@keyframes glowwhite {
+  0% {box-shadow: 0 0 10px rgba(50, 251, 14, 0);}
+  50% {box-shadow: 0 0 20px white;}
+  100% {box-shadow: 0 0 10px rgba(50, 251, 14, 0);}
+}
+
+.startBtn:hover {
+  transform: scale(2.4);
+}
+
+.startBtn:active {
+  transform: scale(1.9);
+  transition: all .2s;
+}
+
+#voldpic {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 50px red;
+  transition: all 1s;
+  opacity: 0;
+  animation: "flash 2s repeat";
+  animation-play-state: "paused";
+}
+
+@keyframes flash {
+  0% {opacity: 0}
+  50% {opacity: 1}
+  60% {opacity: 1}
+  100% {opacity: 0}
+}
+
+.qa-cont {
+  position: fixed;
+  top: 5%;
+  left: 0;
+  width:100vw;
+  height: fit-content;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.question {
+  margin: 20px;
+  color: lightskyblue;
+  text-align: center;
+  font-size: 350%;
+  color: lime;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.answerBtn {
+  margin: 25px auto;
+  color: lightskyblue;
+}
+
+h2 {
+  font-size: 3.5em;
+  color: lightblue;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px lime;
+  text-align: center;
+}
+
+#hat {
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 30px;
+  box-shadow: 0 0 40px brown;
+}
+
+#houseName {
+  font-size: 3em;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px black;
+  text-align: center;
+  text-shadow: 0 0 10px lime;
+}
+
+#housePic {
+  height: 400px;
+}
