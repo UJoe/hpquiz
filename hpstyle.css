@@ -167,7 +167,6 @@ h2 {
 
 @media (max-width: 768px) {
   #root {
-    background-repeat: no-repeat;
     background-position: -50px 0;
     width: 100%
   }
@@ -181,9 +180,14 @@ h2 {
     justify-content: center;
   }
 
+  .startBtn {
+    transform: scale(1.5);
+  }
+
   h1 {
     position: relative;
     text-align: center;
+    font-size: 2em;
     filter: brightness(1.2);
     top: 10%;
     right: auto;
@@ -212,7 +216,9 @@ h2 {
   }
 
   .question {
-    font-size: 150%;
+    font-size: 140%;
+    background-color: rgba(196, 57, 57, 0.7);
+    border-radius: 20px;
   }
   
   .answer {
