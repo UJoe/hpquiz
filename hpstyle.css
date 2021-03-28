@@ -18,6 +18,7 @@
   width: 100vw;
   height: 100vh;
   font-family: hpfont;
+  overflow-y: auto;
 }
 
 h1 {
@@ -115,6 +116,7 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .question {
@@ -162,4 +164,85 @@ h2 {
 
 #housePic {
   height: 400px;
+}
+
+@media (max-width: 768px) {
+  #root {
+    background-repeat: no-repeat;
+    background-position: -50px 0;
+    width: 100%
+  }
+  
+  #startDiv {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  h1 {
+    position: relative;
+    text-align: center;
+    filter: brightness(1.2);
+    top: 10%;
+    right: auto;
+    background-image: radial-gradient(red, rgba(255, 255, 255, 0));
+    margin-bottom: 30px;
+  }
+
+  #yesBtn {
+    background-color:rgba(42, 250, 0, 0.781);
+    color: blue;
+  }
+  
+  #noBtn {
+    background-color:rgba(70, 66, 95, 0.7);
+    color: rgba(255, 255, 255, 0.521);
+  }
+
+  #voldpic {
+    top: 15%;
+    left: 25%;
+  }
+
+  .qa-cont {
+    gap: 10px;
+  }
+
+  .question {
+    font-size: 150%;
+  }
+  
+  .answer {
+    gap: 5px;
+  }
+  
+  .answerBtn {
+    margin: 15px auto;
+    transform: scale(1);
+    max-width: 90vw;
+    font-size: 1.2em;
+  }
+  
+  h2 {
+    font-size: 2.2em;
+  }
+
+  #hat {
+    height: 150px;
+    margin: 10px auto;
+    border-radius: 20px;
+  }
+  
+  #houseName {
+    font-size: 2em;
+    letter-spacing: 1px;
+  }
+  
+  #housePic {
+    height: 300px;
+  }
+
 }

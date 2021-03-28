@@ -19,6 +19,8 @@ function _load() {
   function _start() {
     music.play();
     root.style.backgroundImage = "url('./img/hp-background.jpg')";
+    root.style.backgroundSize = "100vw";
+    root.style.backgroundRepeat = "repeat";
     newqa();
   }
 
@@ -71,7 +73,8 @@ function _load() {
       document.getElementById("houseName").innerHTML = houses[win];
       document.getElementById("houseName").style.color = colors[win];
       document.getElementById("housePic").src = `./img/${houses[win]}.jpg`;
-      root.style.backgroundImage = `radial-gradient(black 80%, ${colors[win]} 20%)`;
+      root.style.backgroundImage = `radial-gradient(black 60%, ${colors[win]})`;
+      root.style.backgroundPositionX = "0";
     }, 3650);
   }
 
